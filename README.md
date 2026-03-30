@@ -1,15 +1,11 @@
 # Automated-Medical-Diagnosis-Personalized-Treatment-Optimization
-1. System Goal
-
-Design a healthcare decision-support architecture that:
-
 analyzes patient data for diagnosis support
 recommends personalized treatment actions over time
 learns from sequential clinical outcomes
 aligns decisions with clinician behavior
 scales from simple tabular learning to deep, multi-agent medical environments
 
-This should be framed as a clinical decision-support system, not an autonomous replacement for doctors.
+clinical decision-support system, not an autonomous replacement for doctors.
 
                   +----------------------------------+
                   |      Data Acquisition Layer      |
@@ -527,7 +523,8 @@ unsafe action rate
 constraint violation rate
 high-risk patient stability
 
-Hospital Data Systems
+
+ Hospital Data Systems
         |
         v
 Data Integration API
@@ -637,12 +634,7 @@ safety
 clinician alignment
 explainability
 
-System Architecture Statement:
 The proposed system follows a layered healthcare AI architecture in which multimodal patient data are transformed into sequential patient state representations and modeled through a Markov Decision Process. Classical reinforcement learning methods such as SARSA and Q-learning serve as interpretable baselines, Monte Carlo methods support return-based policy evaluation, and Deep Reinforcement Learning handles high-dimensional diagnosis and treatment state spaces. Inverse Reinforcement Learning is integrated to infer clinician-aligned reward structures from expert behavior, while Multi-Agent Reinforcement Learning extends the framework to collaborative care settings such as ICU coordination, hospital resource allocation, and robotic assistance. A safety-aware clinical decision engine combines these components to produce explainable and risk-constrained recommendations for automated medical diagnosis and personalized treatment optimization.
-
-
-The most defensible version of your architecture is this:
-
 Diagnosis perception handled by deep feature extraction
 Sequential diagnosis and treatment decisions handled by RL
 Reward alignment improved with IRL
