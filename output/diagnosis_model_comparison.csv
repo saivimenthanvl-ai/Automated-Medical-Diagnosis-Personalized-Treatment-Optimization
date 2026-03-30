@@ -1,0 +1,6 @@
+model,accuracy
+GradientBoosting,1.0
+RandomForest,0.68
+LogisticRegression,0.43
+SVC,0.41
+KNN,0.19
